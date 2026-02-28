@@ -48,4 +48,14 @@ public class Period {
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
+
+    @Override
+    public String toString() {
+        return "period =" + "Period{" +
+                "periodId=" + periodId +
+                ", code='" + code + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                '}';
+    }
 }

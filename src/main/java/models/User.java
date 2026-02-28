@@ -79,4 +79,17 @@ public class User {
     public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
+
+    @Override
+    public String toString() {
+        return "user =" + "User{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", passwordHash='" + passwordHash + '\'' +
+                ", status=" + status +
+                ", createdAt=" + createdAt +
+                ", roles=" + roles +
+                '}';
+    }
 }

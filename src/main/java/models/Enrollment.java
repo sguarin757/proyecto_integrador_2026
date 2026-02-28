@@ -68,4 +68,16 @@ public class Enrollment {
     public void setEnrollmentAt(LocalDate enrollmentAt) {
         this.enrollmentAt = enrollmentAt;
     }
+
+    @Override
+    public String toString() {
+        return "enrollment =" + "Enrollment{" +
+                "enrollmentId=" + enrollmentId +
+                ", student=" + student +
+                ", program=" + program +
+                ", period=" + period +
+                ", status=" + status +
+                ", enrollmentAt=" + enrollmentAt +
+                '}';
+    }
 }

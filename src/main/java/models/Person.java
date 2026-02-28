@@ -1,12 +1,12 @@
 package models;
 
 public class Person {
-    Long userId;
-    String code;
-    String documentNumber;
-    String firstName;
-    String lastName;
-    Boolean status;
+    private Long userId;
+    private String code;
+    private String documentNumber;
+    private String firstName;
+    private String lastName;
+    private Boolean status;
 
     public Person() {
 
@@ -67,5 +67,17 @@ public class Person {
 
     public void setStatus(Boolean status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "person =" + "Person{" +
+                "userId=" + userId +
+                ", code='" + code + '\'' +
+                ", documentNumber='" + documentNumber + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

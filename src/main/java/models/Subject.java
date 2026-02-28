@@ -57,4 +57,15 @@ public class Subject {
     public void setProgram(Program program) {
         this.program = program;
     }
+
+    @Override
+    public String toString() {
+        return "subject =" + "Subject{" +
+                "subjectId=" + subjectId +
+                ", name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", credits=" + credits +
+                ", program=" + program +
+                '}';
+    }
 }

@@ -1,9 +1,10 @@
 package models;
 
 public class Teacher extends Person {
-    Long teacherId;
+    private Long teacherId;
 
     public Teacher() {
+
     }
      public Teacher(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status, Long teacherId) {
          super(userId, code, documentNumber, firstName, lastName, status);
@@ -16,5 +17,18 @@ public class Teacher extends Person {
 
     public void setTeacherId(Long teacherId) {
         this.teacherId = teacherId;
+    }
+
+    @Override
+    public String toString() {
+        return "teacher =" + "Teacher{" +
+                "userId=" + getUserId() +
+                ", code='" + getCode() + '\'' +
+                ", documentNumber='" + getDocumentNumber() + '\'' +
+                ", firstName='" + getFirstName() + '\'' +
+                ", lastName='" + getLastName() + '\'' +
+                ", status=" + getStatus() +
+                ", teacherId=" + teacherId +
+                '}';
     }
 }

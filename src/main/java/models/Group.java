@@ -57,4 +57,15 @@ public class Group {
     public void setShift(String shift) {
         this.shift = shift;
     }
+
+    @Override
+    public String toString() {
+        return "group =" + "Group{" +
+                "groupId=" + groupId +
+                ", code='" + code + '\'' +
+                ", program=" + program +
+                ", period=" + period +
+                ", shift='" + shift + '\'' +
+                '}';
+    }
 }

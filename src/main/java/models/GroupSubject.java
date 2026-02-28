@@ -47,4 +47,14 @@ public class GroupSubject {
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
+
+    @Override
+    public String toString() {
+        return "groupsubject =" + "GroupSubject{" +
+                "groupSubjectId=" + groupSubjectId +
+                ", group=" + group +
+                ", subject=" + subject +
+                ", teacher=" + teacher +
+                '}';
+    }
 }

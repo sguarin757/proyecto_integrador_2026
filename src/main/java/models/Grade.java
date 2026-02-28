@@ -57,4 +57,15 @@ public class Grade {
     public void setObservation(String observation) {
         this.observation = observation;
     }
+
+        @Override
+    public String toString() {
+        return "grade =" + "Grade{" +
+                "gradeId=" + gradeId +
+                ", groupSubject=" + groupSubject +
+                ", student=" + student +
+                ", finalScore=" + finalScore +
+                ", observation='" + observation + '\'' +
+                '}';
+    }
 }

@@ -37,4 +37,13 @@ public class Program {
     public void setCode(String code) {
         this.code = code;
     }
+
+    @Override
+    public String toString() {
+        return "program =" + "Program{" +
+                "programId=" + programId +
+                ", name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                '}';
+    }
 }
