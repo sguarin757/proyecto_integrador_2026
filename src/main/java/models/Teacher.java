@@ -6,8 +6,8 @@ public class Teacher extends Person {
     public Teacher() {
 
     }
-     public Teacher(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status, Long teacherId) {
-         super(userId, code, documentNumber, firstName, lastName, status);
+     public Teacher(String code, String documentNumber, String firstName, String lastName, Boolean status, Long teacherId) {
+         super(code, documentNumber, firstName, lastName, status);
          this.teacherId = teacherId;
      }
 
@@ -22,7 +22,6 @@ public class Teacher extends Person {
     @Override
     public String toString() {
         return "teacher =" + "Teacher{" +
-                "userId=" + getUserId() +
                 ", code='" + getCode() + '\'' +
                 ", documentNumber='" + getDocumentNumber() + '\'' +
                 ", firstName='" + getFirstName() + '\'' +

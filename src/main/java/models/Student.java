@@ -6,11 +6,13 @@ public class Student extends Person {
     private Long studentId;
 
     public Student() {
-        super();
+        super();//permite llenar los atributos de la clase padre
+        this.birthDate = null;
+        this.studentId = null;
     }
 
-    public Student(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status, LocalDate birthDate, Long studentId) {
-        super(userId, code, documentNumber, firstName, lastName, status);
+    public Student(String code, String documentNumber, String firstName, String lastName, Boolean status, LocalDate birthDate, Long studentId) {
+        super(code, documentNumber, firstName, lastName, status);
         this.birthDate = birthDate;
         this.studentId = studentId;
     }
@@ -34,7 +36,6 @@ public class Student extends Person {
     @Override
     public String toString() {
         return "student =" + "Student{" +
-                "userId=" + getUserId() +
                 ", code='" + getCode() + '\'' +
                 ", documentNumber='" + getDocumentNumber() + '\'' +
                 ", firstName='" + getFirstName() + '\'' +

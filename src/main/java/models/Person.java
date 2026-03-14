@@ -1,32 +1,22 @@
 package models;
 
-public class Person {
-    private Long userId;
-    private String code;
-    private String documentNumber;
-    private String firstName;
-    private String lastName;
-    private Boolean status;
+public abstract class Person {
+    protected String code;
+    protected String documentNumber;
+    protected String firstName;
+    protected String lastName;
+    protected Boolean status;
 
     public Person() {
 
     }
 
-    public Person(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status) {
-        this.userId = userId;
+    public Person( String code, String documentNumber, String firstName, String lastName, Boolean status) {
         this.code = code;
         this.documentNumber = documentNumber;
         this.firstName = firstName;
         this.lastName = lastName;
         this.status = status;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
     }
 
     public String getCode() {
@@ -72,7 +62,6 @@ public class Person {
     @Override
     public String toString() {
         return "person =" + "Person{" +
-                "userId=" + userId +
                 ", code='" + code + '\'' +
                 ", documentNumber='" + documentNumber + '\'' +
                 ", firstName='" + firstName + '\'' +
