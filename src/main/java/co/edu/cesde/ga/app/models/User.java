@@ -1,4 +1,4 @@
-package models;
+package co.edu.cesde.ga.app.models;
 import java.util.List;
 import java.time.LocalDate;
 

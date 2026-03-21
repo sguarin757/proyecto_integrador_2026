@@ -1,7 +1,6 @@
-package co.edu.cesde.ga.app;
-import models.Person;
-import models.Teacher;
-import models.Student;
+package co.edu.cesde.ga.app.app;
+import co.edu.cesde.ga.app.models.Teacher;
+import co.edu.cesde.ga.app.models.Student;
 
 public class Main {
     public static void main(String[] args) {

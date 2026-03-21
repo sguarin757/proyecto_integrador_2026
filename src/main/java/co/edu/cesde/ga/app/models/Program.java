@@ -1,4 +1,4 @@
-package models;
+package co.edu.cesde.ga.app.models;
 
 public class Program {
     Long programId;
