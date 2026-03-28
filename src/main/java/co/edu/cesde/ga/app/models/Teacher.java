@@ -6,7 +6,7 @@ public class Teacher extends Person {
     public Teacher() {
 
     }
-     public Teacher(String code, String documentNumber, String firstName, String lastName, Boolean status, Long teacherId) {
+     public Teacher(String code, String documentNumber, String firstName, String lastName, boolean status, Long teacherId) {
          super(code, documentNumber, firstName, lastName, status);
          this.teacherId = teacherId;
      }
